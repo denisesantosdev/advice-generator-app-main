@@ -79,6 +79,7 @@ body {
 .attribution {
     align-self: end;
     color: var(--text-color);
+    text-align: center;
 }
 
 .attribution a {

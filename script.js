@@ -20,5 +20,5 @@ function displayAdvice(data) {
   const adviceId = data.slip.id;
 
   adviceIdNumber.innerHTML = adviceId
-  adviceText.innerHTML = advice
+  adviceText.innerHTML = `"${advice}"`
 }
