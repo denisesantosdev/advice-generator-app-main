@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
+
+:root {
+  --text-color: hsl(193, 38%, 86%);
+  --advice-dice-color: hsl(150, 100%, 66%);
+  --advice-card-color: hsl(217, 19%, 24%);
+  --background-color: hsl(218, 23%, 16%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  padding: 1rem;
+  place-items: center;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--background-color);
+}
+
+.container {
+  max-width: 540px;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.advice-card {
+  background-color: var(--advice-card-color);
+  border-radius: 0.625rem;
+  padding: 3rem 1rem;
+  position: relative;
+}
+
+.advice-card  *:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.advice-id {
+    color: var(--advice-dice-color);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.advice-text {
+    color: var(--text-color);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.dice-btn {
+    background-color: var(--advice-dice-color);
+    padding: 1.5rem;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    bottom: -2.4rem;
+    transition: box-shadow .5s ease-out;
+}
+
+.dice-btn:hover,
+.dice-btn:focus {
+    box-shadow: 0px 0px 25px var(--advice-dice-color);
+}
+
+.attribution {
+    align-self: end;
+    color: var(--text-color);
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--advice-dice-color);
+}
+
+.attribution a:hover,
+.attribution a:focus {
+    text-decoration: underline;
+}
