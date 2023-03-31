@@ -2,7 +2,7 @@ const updateAdviceBtn = document.querySelector(".dice-btn");
 const adviceIdNumber = document.querySelector("#advice-id-number");
 const adviceText = document.querySelector(".advice-text");
 
-updateAdviceBtn.addEventListener('click', getAdviceData())
+updateAdviceBtn.addEventListener('click', getAdviceData)
 
 async function getAdviceData() {
   const url = `https://api.adviceslip.com/advice`;
@@ -12,6 +12,8 @@ async function getAdviceData() {
 
   displayAdvice(data);
 }
+
+getAdviceData()
 
 function displayAdvice(data) {
   const advice = data.slip.advice;
